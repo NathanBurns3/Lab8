@@ -1,0 +1,1 @@
+what is the difference in creating a structure and creating a new class

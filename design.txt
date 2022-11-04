@@ -1,0 +1,43 @@
+1. have the format_compression_ratio and data_available functions precreated
+2. create the compression_ratio_calculation function
+    2a. divide the deCodeLength by the preCodeLength
+    2b. call the format_compression_ratio and use the division result as the argument
+    2c. print the result to the console
+3. create the print_decompression function
+    3a. loop through the char vector
+    3b. print to the console and increase the decompression counter
+    3c. print a new line
+4. initialize the following variables:
+    decode - vector of chars
+    numberOfCharacters - int
+    character - char
+    character2 - char
+    preCodeLength - double
+    deCodeLength - double
+    charNumbers - array of characters with numbers 1-9
+5. initialize the input file and open int
+6. check if the file failed
+    6a. if so then print out the error message and end the program
+7. while there is still data in the file:
+8. store the number into numberOfCharacters and check if its equivalent to 0
+    8a. if it is then print an error message and end the program
+9. increment preCodeLength
+10. check if the number greater than 9
+    10a. if it is then increment preCodeLength
+11. check if there is data available in the file
+    11a. if there is not then print an error message and end the program
+12. store the character in the character variable
+13. checker if the numberOfCharacters variable is greater than 10
+    13a. if it is then print an error message and end the program
+14. increment the preCodeLength variable
+15. check if the character variable is a '-'
+    15a. if it is then check if there is more data in the file
+        15a1. if there isn't then print an error message and end the program
+    15b. take in the next character and store it in the character2 variable
+    15c. check if the character2 variable is equivalent to 0
+        15c1. if it is then print an error message and end the program
+    15d. increment the preCodeLength variable
+    15e. use a for loop to add character2 numberOfCharacters times to the decode vector
+16. if the character is not a '-' then use a for loop to add character numberOfCharacters tiems to the decode vector
+17. call the print_decompression function and use decode and deCodeLength as the arguments
+18. call the compression_ratio_calculation function and use deCodeLength and preCodeLength and the arguments

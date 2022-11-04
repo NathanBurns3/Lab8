@@ -1,0 +1,5 @@
+Run-length encoding is well-suited for repetitive data. When there are a lot of recurring characters
+it makes the compression more efficient. When there are a lot of spaces or non-repetitive characters
+it makes it harder to decompress and not a lot is changed to the file. A real-world example of data
+being well-suited for run-length encoding would be bitmap images. These bitmap images often have
+repetitive pixels of the same value that could easily be compressed using run-length encoding.
